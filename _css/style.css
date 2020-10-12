@@ -13,11 +13,22 @@
 body {
   font-family: "Ubuntu", sans-serif;
   background: linear-gradient(180deg, #e7fffc 100%, #03dac5 100%);
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
 }
 
 a {
   text-decoration: none;
   color: darkslategray;
+}
+
+b {
+  color: var(--color-green);
 }
 
 #header-page {
@@ -55,54 +66,13 @@ a {
   border-radius: 6px;
 }
 
-#banner {
-  display: flex;
-  background-color: var(--color-green-dark);
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  height: 40vh;
-  padding-left: 1vh;
-}
-
-#banner hgroup h2 {
-  font-size: 5rem;
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-
-#banner hgroup h5 {
-  font-size: 3rem;
-  font-weight: 400;
-}
-
-#banner {
-  font-family: "Ubuntu";
-  color: #fff;
-}
-
-#usuario {
-  height: 39.5vh;
-}
-
-.banner-svgs {
-  display: flex;
-}
-
-.banner-svgs img {
-  width: 80%;
-  height: 80%;
-  margin-left: 24px;
-  margin-right: 24px;
-}
-
 .banner-slider {
+  margin-top: 48px;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-evenly;
-  width: 90vw;
-  height: 80vh;
+  width: 100%;
+  height: 100vh;
 }
 
 .banner-items {
@@ -110,10 +80,12 @@ a {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  width: 50%;
+  height: 80%;
 }
 .item-text {
   color: #858585;
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   width: 300px;
   height: 100%;
 }
@@ -124,6 +96,18 @@ a {
   margin-bottom: 16px;
 }
 
+.banner-svgs {
+  display: flex;
+  width: 50%;
+}
+
+.banner-svgs img {
+  width: 80%;
+  height: 80%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
 .navegation {
   position: absolute;
   bottom: 48px;
@@ -131,6 +115,7 @@ a {
 
 .banner-slider .btn-previous,
 .banner-slider .btn-next {
+  margin: 8px;
   width: 48px;
   opacity: 0.6;
   transition: 0.5s;
@@ -139,4 +124,148 @@ a {
 .banner-slider .btn-previous:hover,
 .banner-slider .btn-next:hover {
   opacity: 1;
+}
+
+#screen1 {
+  background-color: var(--color-green);
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+#screen1 .text-screen h2 {
+  color: #007368;
+}
+
+#screen1 .text-screen h5 {
+  color: #27968b;
+}
+
+.text-screen {
+  width: 400px;
+}
+
+.text-screen h2{
+  font-weight: 700;
+  font-size: 3.4rem;
+  margin-bottom: 24px;
+}
+
+.text-screen h5{
+  font-weight: 400;
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+}
+
+#screen2 {
+  background-color: var(--color-green-dark);
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#screen2 .text-screen h2 {
+  color: #fff;
+}
+
+#screen2 .text-screen h5 {
+  color: #fff;
+}
+
+#screen3 {
+  background: linear-gradient(180deg, #e7fffc 100%, #03dac5 100%);
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  margin: 0 auto;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  
+}
+
+#screen3 .text-screen h2 {
+  color: var(--color-green-dark);
+}
+
+#screen3 .text-screen h5 {
+  color: #858585;
+}
+
+#screen-download{
+  background-color: #fff;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#screen-download .text-screen h2 {
+  color: var(--color-green-dark);
+}
+
+#screen-download button {
+  width: 30rem;
+  height: 5rem;
+  background-color: var(--color-green);
+  border-radius: .6rem;
+  outline: none;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: .5s;
+}
+
+#screen-download button:hover{
+  background-color: var(--color-green-dark);
+  box-shadow: 0 4px 8px #00302b98;
+}
+
+
+#banner {
+  display: flex;
+  background-color: var(--color-green-dark);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 50vh;
+  padding: 48px;
+}
+
+#banner hgroup {
+  width: 60%;
+  margin: 0 auto;
+}
+
+#banner hgroup h2 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  color: #03dac5;
+}
+
+#banner hgroup h5 {
+  font-size: 2.8rem;
+  font-weight: 400;
+}
+
+#banner {
+  color: #fff;
+}
+
+#usuario {
+  height: 39.5vh;
 }
