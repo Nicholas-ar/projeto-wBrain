@@ -1,4 +1,142 @@
+:root {
+  font-size: 60%;
+  --color-green: #03dac5;
+  --color-green-dark: #007368;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  background: linear-gradient(180deg, #e7fffc 100%, #03dac5 100%);
+}
+
 a {
   text-decoration: none;
   color: darkslategray;
+}
+
+#header-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 24px auto;
+}
+
+#header-page h1 {
+  color: var(--color-green);
+  margin-left: 24px;
+  font-size: 5rem;
+}
+
+#header-page nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0 24px;
+}
+
+#header-page nav ul li {
+  margin: 12px;
+  color: var(--color-green-dark);
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+#header-page .button-li {
+  padding: 16px 21px;
+  background-color: var(--color-green-dark);
+  color: #fff;
+  border-radius: 6px;
+}
+
+#banner {
+  display: flex;
+  background-color: var(--color-green-dark);
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 40vh;
+  padding-left: 1vh;
+}
+
+#banner hgroup h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+#banner hgroup h5 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+#banner {
+  font-family: "Ubuntu";
+  color: #fff;
+}
+
+#usuario {
+  height: 39.5vh;
+}
+
+.banner-svgs {
+  display: flex;
+}
+
+.banner-svgs img {
+  width: 80%;
+  height: 80%;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.banner-slider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90vw;
+  height: 80vh;
+}
+
+.banner-items {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.item-text {
+  color: #858585;
+  font-size: 2.6rem;
+  width: 300px;
+  height: 100%;
+}
+.item-text h4 {
+  color: var(--color-green);
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+
+.navegation {
+  position: absolute;
+  bottom: 48px;
+}
+
+.banner-slider .btn-previous,
+.banner-slider .btn-next {
+  width: 48px;
+  opacity: 0.6;
+  transition: 0.5s;
+}
+
+.banner-slider .btn-previous:hover,
+.banner-slider .btn-next:hover {
+  opacity: 1;
 }

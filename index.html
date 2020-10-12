@@ -3,78 +3,71 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="_css/style.css" />
-    <title>Family Pay</title>
+    <title>/Family Pay</title>
   </head>
   <body>
-    <header>
-      <h1>Family Pay</h1>
+    <header id="header-page">
+      <h1>/Family Pay</h1>
       <!-- O nome é um placeholder -->
       <nav>
         <ul>
           <li><a href="#">O que é</a></li>
           <li><a href="#">Como funciona</a></li>
-          <li><a href="#">Download</a></li>
+          <li><a href="#" class="button-li">Baixe o app</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section class="o-que-e">
-        <h3>O que é?</h3>
-        <p>Serviço de pagamento contactless</p>
-      </section>
-      <section class="como-funciona">
-        <h3>Como funciona?</h3>
-        <p>
-          Você faz o download do aplicativo, cria a sua conta e a dos
-          dependentes, adiciona crédito na conta deles, define alguns parâmetros
-          de uso e pronto: seus dependentes podem passar a utilizar o aplicativo
-          como um cartão de débito contactless usando NFC, realizando pagamentos
-          com QR code ou Pix!
-        </p>
-      </section>
-      <section class="download">
-        <h3>Download</h3>
-        <p>
-          Se interessou? Você pode baixar o aplicativo no seu sistema android ou
-          iPhone!
-        </p>
+      <section class="banner-slider">
+        <div class="banner-items">
+            <div class="item-text text-1" style="display: none">
+              <h4>/Family Pay:</h4> 
+              <p>
+              Uma solução que auxilia na <b>gerência de finanças</b>,
+              incentiva responsabilidade financeira para jovens e permita maior autonomia
+               através de pagamentos sem contato.</p></div>
+            <div class="item-text text-2" style="display: none"><h4>O que é:</h4>
+              <p>Somos um aplicativo de pagamento e gerenciamento de finanças, com 
+              foco em <b>tecnologia contactless</b>. 
+              </p></div>
+            <div class="item-text text-3" style="display: none"><h4>Como funciona:</h4> <p>Cria a sua conta e a dos seus
+              dependentes, <b>adiciona crédito</b> na conta deles, define configurações
+              de uso e pronto</p></div>
+
+            <div class="item-text text-4" style="display: none">
+              <h4>Pagamento:</h4>
+              <p>
+               <b>Você</b> e seus <b>dependentes</b> podem passar a utilizar o aplicativo
+              como um cartão de <b>débito contactless</b>, realizando pagamentos
+              com <b>NFC</b>, <b>QR code</b> ou <b>Pix!</b>
+              </p>
+            </div>
+
+            <div class="navegation">
+              <img src="_img/ButtonLeft.svg" class="btn-previous" alt="previous"/>
+              <img src="_img/ButtonRight.svg"  class="btn-next" alt="next"/>
+            </div>
+        </div>
+        <div class="banner-svgs">
+          <img src= "_img/SvgApp.svg" alt="app">
+          <img src= "_img/Family.svg" alt="Family">
+        </div>      
       </section>
     </main>
     <footer>
-      <section class="copyright">
-        <h5>
-          Copyright &copy 2020 - by wBrain students<br />
-          <a
-            href="https://www.facebook.com/agile.wbrain/"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Facebook</a
-          >
-          |
-          <a
-            href="https://twitter.com/agile_wbrain"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Twitter</a
-          >
-          |
-          <a
-            href="https://www.instagram.com/agile_wbrain/"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Instagram</a
-          >
-          |
-          <a
-            href="https://www.linkedin.com/company/wbrain"
-            target="_blank"
-            rel="noreferrer noopener"
-            >LinkedIn</a
-          >
-        </h5>
+      <section id="banner">
+        <hgroup>
+          <h2>FAMILY PAY <br> É mais que dinheiro!</h2>
+          <h5>Com Family pay você pode gerenciar as finanças de todos os seus dependentes!</h5>
+        </hgroup>
+        <figure>
+          <img src="_img/usuario.png" alt="Usuário feliz com o aplicativo!" id="usuario">
+        </figure>
       </section>
     </footer>
     <script src="_js/script.js"></script>
   </body>
 </html>
+1
