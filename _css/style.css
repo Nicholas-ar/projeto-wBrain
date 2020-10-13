@@ -123,6 +123,8 @@ b {
 .item-text {
   color: #858585;
   font-size: 2.4rem;
+  line-height: 1.6;
+
 }
 .item-text h4 {
   color: var(--color-green);
@@ -322,9 +324,66 @@ b {
   color: #fff;
 }
 
+#section-sobre {
+
+    background:  linear-gradient(180deg, #e7fffc 100%, #03dac5 100%);
+    width: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%
+    
+}
+
+#section-sobre #texts {
+  color: #007368;
+  font-size: 2em;
+  line-height: 2;
+}
+
+#section-sobre #screen_phone {
+  position: absolute;
+  width: 32%;
+}
+
+#section-sobre #bolas {
+  opacity: 1;
+}
+
+#section-sobre #images {
+  margin-top: 10em;
+}
+
+#section-dev {
+  height: 100%;
+}
+
+#section-dev #avatar-devs {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 
-@media(max-width: 900px){
+#section-dev #avatar-devs .avatar-dev {
+  width: 100px;
+  text-align: center;
+}
+
+#section-dev #avatar-devs .avatar-dev .name-dev{
+  font-size: 2em;
+}
+
+#section-dev #avatar-devs .avatar-dev img {
+  width: 100px;
+  border-radius: 50% !important;
+
+}
+
+@media(max-width:900px){
 
   #header-page h1 {
     color: var(--color-green);
@@ -358,6 +417,23 @@ b {
   .banner-items {
     width: 100%;
     padding: 24px;
+    line-height: 1.4;
+
+  }
+
+  .item-text {
+    color: #858585;
+    font-size: 2rem;
+    line-height: 1.5;
+    word-wrap: break-word;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .navegation {
+    margin-top: 30px;
+    position: relative;
+    bottom: 0;
   }
 
   .banner-slider {
@@ -365,13 +441,16 @@ b {
     width: 100%;
     justify-content: center;
     text-align: start;
+    height: auto;
   }
   #screen1,
   #screen2,
-  #screen3 {
+  #screen3,
+  #section-sobre {
     flex-direction: column;
   }
 
+  
   #banner {
     flex-direction: column;
   }
@@ -380,5 +459,25 @@ b {
   }
   #banner figure {
     margin: auto;
+  }
+
+
+
+  #section-sobre #texts {
+    margin-top: auto;
+  }
+
+  #section-sobre #screen_phone {
+    display: none;
+    width: 100%;
+  }
+
+  #section-sobre #bolas{
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 40%;
+    z-index: 1;
+    opacity: 0.3;
   }
 }
