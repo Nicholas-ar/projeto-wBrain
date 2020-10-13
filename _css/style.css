@@ -55,6 +55,7 @@ b {
   border-bottom: 2px solid var(--color-green);
   padding: 10px 0 !important;
   transition: background-color 0.4s ease;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px;
 }
 
 .scrollable nav ul li a{
@@ -324,6 +325,33 @@ b {
 
 
 @media(max-width: 900px){
+
+  #header-page h1 {
+    color: var(--color-green);
+    margin-left: 24px;
+    font-size: 2.5rem;
+  }
+
+  .scrollable h1 {
+    color: #fff !important; 
+    font-size: 2rem !important;
+  }
+
+  .scrollable .button-li {
+    display: block;
+    color: #fff !important; 
+    font-size: 2rem !important;
+  }
+
+  .scrollable .menu-item {
+    display: none;
+  }
+  
+  .button-li {
+    display: none;
+  }
+  
+
   .banner-svgs {
     display: none;
   }
