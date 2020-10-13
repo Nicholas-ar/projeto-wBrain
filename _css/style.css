@@ -117,12 +117,11 @@ b {
   justify-content: space-between;
   width: 50%;
   height: 80%;
+  padding: 48px;
 }
 .item-text {
   color: #858585;
   font-size: 2.4rem;
-  width: 300px;
-  height: 100%;
 }
 .item-text h4 {
   color: var(--color-green);
@@ -186,7 +185,7 @@ b {
 }
 
 .text-screen {
-  width: 400px;
+  width: 100%;
 }
 
 .text-screen h2{
@@ -243,16 +242,24 @@ b {
 #screen-download{
   background-color: #fff;
   width: 100%;
-  height: 100%;
+  height: 50%;
   min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+#screen-download .text-screen {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
 
 #screen-download .text-screen h2 {
   color: var(--color-green-dark);
+  margin: 0 auto 24px auto;
 }
 
 #screen-download button {
@@ -267,6 +274,7 @@ b {
   cursor: pointer;
   border: none;
   transition: .5s;
+  margin: 0 auto;
 }
 
 #screen-download button:hover{
@@ -288,7 +296,7 @@ b {
 }
 
 #banner hgroup {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -305,7 +313,8 @@ b {
 }
 
 #banner figure img {
-  width: 120px;
+  width: 80%;
+  margin-left: 48px;
 }
 
 #banner {
@@ -318,9 +327,30 @@ b {
   .banner-svgs {
     display: none;
   }
+  .banner-items {
+    width: 100%;
+    padding: 24px;
+  }
+
+  .banner-slider {
+    margin-top: 80px;
+    width: 100%;
+    justify-content: center;
+    text-align: start;
+  }
   #screen1,
   #screen2,
   #screen3 {
     flex-direction: column;
+  }
+
+  #banner {
+    flex-direction: column;
+  }
+  #banner figure img {
+    margin: auto;
+  }
+  #banner figure {
+    margin: auto;
   }
 }
