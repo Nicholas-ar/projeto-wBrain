@@ -42,7 +42,37 @@ b {
   justify-content: space-between;
   align-items: center;
   margin: 24px auto;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
 }
+
+ 
+.scrollable {
+  background-color: var(--color-green-dark) !important;
+  border-bottom: 2px solid var(--color-green);
+  padding: 10px 0 !important;
+  transition: background-color 0.4s ease;
+}
+
+.scrollable nav ul li a{
+  color: var(--color-green) !important;
+}
+
+.scrollable .button-li {
+
+  background-color: var(--color-green) !important;
+  color: #fff !important;
+}
+
+.scrollable h1 {
+  color: #fff !important; 
+  font-size: 3rem !important;
+}
+
+
 
 #header-page h1 {
   color: var(--color-green);
