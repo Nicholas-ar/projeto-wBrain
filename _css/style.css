@@ -56,11 +56,11 @@ b {
 
  
 .scrollable {
-  background-color: var(--color-green-dark) !important;
-  border-bottom: 2px solid var(--color-green);
+  background-color: #e7fffc !important;
+  /* border-bottom: 2px solid var(--color-green); */
   padding: 10px 0 !important;
   transition: background-color 0.4s ease;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 2px;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 4px;
 }
 
 .scrollable nav ul li a{
@@ -68,7 +68,6 @@ b {
 }
 
 .scrollable .button-li {
-
   background-color: var(--color-green) !important;
   color: #fff !important;
 }
@@ -91,6 +90,11 @@ b {
   color: var(--color-green-dark);
   font-weight: 700;
   font-size: 1.8rem;
+  transition: .5s;
+}
+
+#header-page nav ul li:hover {
+  opacity: .4;
 }
 #header-page .button-li {
   padding: 16px 21px;
@@ -245,13 +249,20 @@ b {
 #screen-download{
   background-color: #fff;
   width: 100%;
-  height: 50%;
   min-height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
+
+
+#screen-download img{
+  width: 20%;
+  min-width: 200px;
+  margin: 16px auto;
+}
+
 #screen-download .text-screen {
   margin: 0 auto;
   display: flex;
@@ -277,7 +288,7 @@ b {
   cursor: pointer;
   border: none;
   transition: .5s;
-  margin: 0 auto;
+  margin: 0 auto 16px auto;
 }
 
 #screen-download button:hover{
@@ -293,9 +304,8 @@ b {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  height: 100%;
-  min-height: 600px;
   padding: 48px;
+  color: #fff;
 }
 
 #banner hgroup {
@@ -318,10 +328,6 @@ b {
 #banner figure img {
   width: 80%;
   margin-left: 48px;
-}
-
-#banner {
-  color: #fff;
 }
 
 #section-sobre {
@@ -479,7 +485,7 @@ b {
     width: 80px;
   }
 
-  .scrollable h1 {
+  .scrollable {
     color: #fff !important; 
     font-size: 2rem !important;
   }
@@ -488,6 +494,7 @@ b {
     display: block;
     color: #fff !important; 
     font-size: 2rem !important;
+    margin-top: 8px;
   }
 
   .scrollable .menu-item {
@@ -539,15 +546,14 @@ b {
   
   #banner {
     flex-direction: column;
+    padding: 24px;
   }
   #banner figure img {
-    margin: auto;
+    margin: 16px auto;
   }
   #banner figure {
-    margin: auto;
+    margin: 16px auto;
   }
-
-
 
   #section-sobre #texts {
     margin-top: auto;
