@@ -260,8 +260,7 @@ b {
 
 #screen-download img{
   width: 20%;
-  min-width: 200px;
-  margin: 16px auto;
+  min-width: 300px;
 }
 
 #screen-download .text-screen {
@@ -545,14 +544,25 @@ b {
   
   #banner {
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 24px;
   }
-  #banner figure img {
-    margin: 16px auto;
-  }
   #banner figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #banner figure img {
+    width: 100%;
     margin: 16px auto;
   }
+
+
+#screen-download img{
+  width: 100%;
+}
 
   #section-sobre #texts {
     margin-top: auto;
