@@ -28,7 +28,7 @@ body {
 
 main {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 a {
@@ -76,14 +76,6 @@ b {
 .scrollable h1 {
   color: #fff !important; 
   font-size: 3rem !important;
-}
-
-
-
-#header-page h1 {
-  color: var(--color-green);
-  margin-left: 24px;
-  font-size: 5rem;
 }
 
 #header-page nav ul {
@@ -152,6 +144,7 @@ b {
 .banner-svgs img {
   width: 80%;
   height: 80%;
+  min-width: 40%;
   margin-left: 24px;
   margin-right: 24px;
 }
@@ -332,16 +325,14 @@ b {
 }
 
 #section-sobre {
-
-    background:  linear-gradient(180deg, #e7fffc 100%, #03dac5 100%);
-    width: 100%;
-    padding: 24px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
-    height: 100%
-    
+  background:  linear-gradient(180deg, #e7fffc 100%, #03dac5 100%);
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%  
 }
 
 #section-sobre #texts {
@@ -421,39 +412,71 @@ b {
 }
 
 .footer {
-  position: sticky;
+  clear: both;
+  position: relative;
   bottom: 0;
+  right: 0;
+  left: 0;
   width: 100%;
-  height: 180px;
   background-color: #003b36;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: space-around;
-  padding: 24px;
+  padding: 8px 24px;
 }
 
-.logo-footer {
-  padding: 16px;
-  border-bottom: 1px solid #e7fffc;
+.footer-top {
+  display: flex;
   width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid #e7fffc44;
 }
+
 .icons-store {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   margin: 16px 0;
-  align-self: flex-end;
 }
 
 .store-size {
   width: 140px;
-  margin-left: 16px;
+  margin: 8px 16px;
+}
+.copyright {
+  margin: 16px 8px;
+  font-size: 1.6rem;
+  color: #e7fffc;
+  align-self: flex-start;
+}
+
+.copyright a {
+  color: #e7fffc;
+  font-size: 1.4rem;
+  margin: 0 auto;
 }
 
 @media(max-width:900px){
 
-  #header-page h1 {
-    color: var(--color-green);
-    margin-left: 24px;
-    font-size: 2.5rem;
+  #header-page {
+    margin: 8px auto;
+  }
+  #header-page nav ul li {
+    font-size: 1.6rem;
+  }
+
+  .logo{
+    width: 80px;
+    margin: 0 8px;
+  }
+
+  .store-size{
+    margin: 4px 0;
+    width: 80px;
   }
 
   .scrollable h1 {
