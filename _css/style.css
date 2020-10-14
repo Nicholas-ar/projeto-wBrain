@@ -94,7 +94,7 @@ b {
 }
 
 #header-page nav ul li:hover {
-  opacity: .4;
+  opacity: .6;
 }
 #header-page .button-li {
   padding: 16px 21px;
@@ -254,6 +254,7 @@ b {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 24px;
 }
 
 
@@ -264,16 +265,14 @@ b {
 }
 
 #screen-download .text-screen {
-  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 24px;
 }
 
 #screen-download .text-screen h2 {
   color: var(--color-green-dark);
-  margin: 0 auto 24px auto;
+  margin: 16px auto;
 }
 
 #screen-download button {
